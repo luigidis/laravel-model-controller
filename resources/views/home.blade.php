@@ -9,7 +9,7 @@
             <div class="grid">
                 @foreach ($movies as $movie)
                     <div class="card">
-                        <a href="">
+                        <a href="{{ route('movies.show', $movie)}}">
                             <h2>Title: {{ $movie->title }}</h2>
                             <h3>Original Title: {{ $movie->original_title }}</h3>
                             <p>Nationality: {{ $movie->nationality }}</p>
